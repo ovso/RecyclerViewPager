@@ -9,22 +9,23 @@ import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainViewHolder extends RecyclerView.ViewHolder {
-  @BindView(R.id.textview_mainviewholder) TextView indexTextView;
+public class HorizontalViewHolder extends RecyclerView.ViewHolder {
+  @BindView(R.id.textview_viewholder_item) TextView titleTextView;
 
-  MainViewHolder(@NonNull View itemView) {
+  HorizontalViewHolder(@NonNull View itemView) {
     super(itemView);
     ButterKnife.bind(this, itemView);
   }
 
   void bind(int position) {
-    indexTextView.setText(String.valueOf(position));
+    titleTextView.setText(String.valueOf(position));
   }
 
-  static MainViewHolder create(ViewGroup parent) {
+  static HorizontalViewHolder create(ViewGroup parent) {
     //View view = View.inflate(parent.getContext(), R.layout.item_main, parent);
     View view =
-        LayoutInflater.from(parent.getContext()).inflate(R.layout.item_main, parent, false);
-    return new MainViewHolder(view);
+        LayoutInflater.from(parent.getContext())
+            .inflate(R.layout.item_horizontal_viewholder, parent, false);
+    return new HorizontalViewHolder(view);
   }
 }

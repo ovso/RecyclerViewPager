@@ -5,9 +5,12 @@
     android:background="#FF6536D7"
     android:gravity="center"
     >
-  <androidx.recyclerview.widget.RecyclerView
-      android:id="@+id/recyclerview_viewholder"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
+  <TextView
+      android:id="@+id/textview_viewholder_item"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:textColor="@android:color/white"
+      android:textSize="50sp"
       />
 </FrameLayout>

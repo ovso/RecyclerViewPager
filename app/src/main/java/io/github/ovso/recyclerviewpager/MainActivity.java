@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements OnSnapPositionCha
 
   private void setupRecyclerView() {
     recyclerView.setLayoutManager(new LinearLayoutManager(this));
-    recyclerView.setAdapter(new MainAdapter());
+    recyclerView.setAdapter(new VerticalAdapter());
     snapHelper = new PagerSnapHelper();
     snapHelper.attachToRecyclerView(recyclerView);
     SnapOnScrollListener.Behavior behavior = SnapOnScrollListener.Behavior.NOTIFY_ON_SCROLL;
