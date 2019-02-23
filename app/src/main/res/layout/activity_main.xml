@@ -4,17 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".ui.main.MainActivity"
     >
   <Button
       android:id="@+id/button_main_recycler"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="?android:attr/actionBarSize"
+      android:text="@string/main_butter_recyclerviewpager"
       />
   <Button
       android:id="@+id/button_main_viewpager2"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="?android:attr/actionBarSize"
+      android:text="@string/main_button_viewpager2"
       />
 </LinearLayout>

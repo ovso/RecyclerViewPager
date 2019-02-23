@@ -1,5 +1,6 @@
 package io.github.ovso.recyclerviewpager.ui.recyclerviewpager.adapter;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +12,8 @@ import butterknife.ButterKnife;
 import io.github.ovso.recyclerviewpager.R;
 
 public class HorizontalViewHolder extends RecyclerView.ViewHolder {
-  @BindView(R.id.textview_viewholder_item) TextView titleTextView;
+  private final static String TAG = "HorizontalViewHolder";
+  @BindView(R.id.textview_hviewholder_item) TextView titleTextView;
 
   HorizontalViewHolder(@NonNull View itemView) {
     super(itemView);
@@ -19,11 +21,11 @@ public class HorizontalViewHolder extends RecyclerView.ViewHolder {
   }
 
   void bind(int position) {
+    Log.d(TAG, "bind = " + position);
     titleTextView.setText(String.valueOf(position));
   }
 
   static HorizontalViewHolder create(ViewGroup parent) {
-    //View view = View.inflate(parent.getContext(), R.layout.item_main, parent);
     View view =
         LayoutInflater.from(parent.getContext())
             .inflate(R.layout.item_horizontal_viewholder, parent, false);
