@@ -1,4 +1,4 @@
-package io.github.ovso.recyclerviewpager;
+package io.github.ovso.recyclerviewpager.ui.recyclerviewpager;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -8,16 +8,21 @@ import androidx.recyclerview.widget.PagerSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import io.github.ovso.recyclerviewpager.R;
+import io.github.ovso.recyclerviewpager.ui.recyclerviewpager.adapter.OnSnapPositionChangeListener;
+import io.github.ovso.recyclerviewpager.ui.recyclerviewpager.adapter.SnapOnScrollListener;
+import io.github.ovso.recyclerviewpager.ui.recyclerviewpager.adapter.VerticalAdapter;
 
-public class MainActivity extends AppCompatActivity implements OnSnapPositionChangeListener {
+public class RecyclerViewPagerActivity extends AppCompatActivity implements
+    OnSnapPositionChangeListener {
 
-  @BindView(R.id.recyclerview_main) RecyclerView recyclerView;
+  @BindView(R.id.recyclerview_recycler) RecyclerView recyclerView;
   private PagerSnapHelper snapHelper;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
+    setContentView(R.layout.activity_recyclerviewpager);
     ButterKnife.bind(this);
     setupRecyclerView();
   }

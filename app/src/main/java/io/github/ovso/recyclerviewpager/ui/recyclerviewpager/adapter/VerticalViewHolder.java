@@ -1,4 +1,4 @@
-package io.github.ovso.recyclerviewpager;
+package io.github.ovso.recyclerviewpager.ui.recyclerviewpager.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.PagerSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import io.github.ovso.recyclerviewpager.R;
 
 public class VerticalViewHolder extends RecyclerView.ViewHolder {
   @BindView(R.id.recyclerview_viewholder) RecyclerView recyclerView;

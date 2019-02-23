@@ -1,4 +1,4 @@
-package io.github.ovso.recyclerviewpager;
+package io.github.ovso.recyclerviewpager.ui.recyclerviewpager.adapter;
 
 import android.view.View;
 import androidx.annotation.NonNull;
@@ -20,7 +20,7 @@ public class SnapOnScrollListener extends RecyclerView.OnScrollListener {
     this.onSnapPositionChangeListener = onSnapPositionChangeListener;
   }
 
-  enum Behavior {
+  public enum Behavior {
     NOTIFY_ON_SCROLL,
     NOTIFY_ON_SCROLL_STATE_IDLE
   }

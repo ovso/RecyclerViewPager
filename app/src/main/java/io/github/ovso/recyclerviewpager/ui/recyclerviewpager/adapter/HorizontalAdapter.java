@@ -1,4 +1,4 @@
-package io.github.ovso.recyclerviewpager;
+package io.github.ovso.recyclerviewpager.ui.recyclerviewpager.adapter;
 
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
