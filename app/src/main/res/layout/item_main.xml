@@ -5,7 +5,7 @@
     android:background="@android:color/black"
     >
   <androidx.viewpager.widget.ViewPager
-      android:id="@+id/viewpager_verticalviewholder"
+      android:id="@+id/viewpager2_viewpager"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       />

@@ -1,5 +1,5 @@
 <resources>
-  <string name="app_name">PagerExample</string>
+  <string name="app_name">RecyclerViewPager</string>
   <string name="main_butter_recyclerviewpager">Recycler ViewPager</string>
   <string name="main_button_viewpager2">ViewPager2</string>
 </resources>

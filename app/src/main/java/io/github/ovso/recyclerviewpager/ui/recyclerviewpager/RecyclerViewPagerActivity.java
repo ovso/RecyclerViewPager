@@ -25,6 +25,7 @@ public class RecyclerViewPagerActivity extends AppCompatActivity implements
     setContentView(R.layout.activity_recyclerviewpager);
     ButterKnife.bind(this);
     setupRecyclerView();
+    setTitle(R.string.app_name);
   }
 
   private void setupRecyclerView() {

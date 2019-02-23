@@ -13,7 +13,7 @@ import io.github.ovso.recyclerviewpager.R;
 
 public class VerticalViewHolder extends RecyclerView.ViewHolder {
   private final static String TAG = "VerticalViewHolder";
-  @BindView(R.id.viewpager_verticalviewholder) ViewPager viewPager;
+  @BindView(R.id.viewpager2_viewpager) ViewPager viewPager;
 
   VerticalViewHolder(@NonNull View itemView) {
     super(itemView);
