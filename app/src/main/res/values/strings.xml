@@ -2,4 +2,5 @@
   <string name="app_name">RecyclerViewPager</string>
   <string name="main_butter_recyclerviewpager">ViewPager1</string>
   <string name="main_button_viewpager2">ViewPager2</string>
+  <string name="main_button_viewpager3">ViewPager3</string>
 </resources>

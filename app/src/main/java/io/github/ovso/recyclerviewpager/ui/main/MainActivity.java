@@ -9,6 +9,7 @@ import butterknife.OnClick;
 import io.github.ovso.recyclerviewpager.R;
 import io.github.ovso.recyclerviewpager.ui.recyclerviewpager.RecyclerViewPagerActivity;
 import io.github.ovso.recyclerviewpager.ui.viewpager2.ViewPager2Activity;
+import io.github.ovso.recyclerviewpager.ui.viewpager3.ViewPager3Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
 
   @OnClick(R.id.button_main_viewpager2) void navigateToViewPager2() {
     Intent intent = new Intent(this, ViewPager2Activity.class);
+    startActivity(intent);
+  }
+
+  @OnClick(R.id.button_main_viewpager3) void navigateToViewPager3() {
+    Intent intent = new Intent(this, ViewPager3Activity.class);
     startActivity(intent);
   }
 }

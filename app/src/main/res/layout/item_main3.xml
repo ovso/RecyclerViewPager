@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.viewpager2.widget.ViewPager2
+<androidx.viewpager.widget.ViewPager
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/viewpager2_viewpager"
+    android:id="@+id/viewpager_main3_viewholder"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.viewpager3.ViewPager3Activity"
+    android:background="#FF008080"
     />
